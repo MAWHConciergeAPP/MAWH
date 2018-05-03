@@ -1,0 +1,30 @@
+body {
+    background-image: url("../img/bg-palm.png");
+}
+#bs-example-navbar-collapse-1 {
+    float: right; 
+}
+.wish-pic {
+    opacity: 0.5;
+}
+.help-pic {
+    margin-top: 10px;
+    margin-left: 160px;
+}
+.jumbotron {
+    opacity: 0.8; 
+    text-align: center; 
+    color: green; 
+    font-family: 'Oswald', sans-serif;
+    padding: 10px; 
+    background-color: transparent;
+}
+.list-group {
+    margin-top: 140px;
+    text-align: center;
+    font-style: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    opacity: 0.9; 
+}
+
