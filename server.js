@@ -1,3 +1,4 @@
+require("dotenv").config();
 var express = require("express");
 var bodyParser = require("body-parser");
 
@@ -9,13 +10,13 @@ var db = require("./models");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-app.use(express.static("public"));
-
 require("./routes/activity-api-routes.js");
 require("./routes/category-api-routes.js");
 require("./routes/contact-api-routes.js");
 require("./routes/faq-api-routes.js");
 require("./routes/user-api-routes.js");
+
+app.use(express.static("public"));
 
 db.sequelize.sync({force: true}).then(function() {
     app.listen(PORT, function() {

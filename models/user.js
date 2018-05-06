@@ -1,9 +1,11 @@
 // for MAW child and admin
 module.exports = function(sequelize, DataTypes) {
     var User = sequelize.define("User", {
-        name: DataTypes.STRING,
+        user_name: DataTypes.STRING,
         chapter: DataTypes.STRING,
         isAdmin: DataTypes.BOOLEAN
+    }, {
+        timestamps: false
     });
 
     User.associate = function(models) {
@@ -19,4 +21,4 @@ module.exports = function(sequelize, DataTypes) {
     };
 
     return User;
-}
+};
