@@ -8,7 +8,8 @@ module.exports = function(sequelize, DataTypes) {
         long: DataTypes.FLOAT,
         durationInMinutes: DataTypes.INTEGER,
         url: DataTypes.STRING,
-        island: DataTypes.STRING
+        island: DataTypes.STRING,
+        notes: DataTypes.STRING
     }, {
         timestamps: false
     });
