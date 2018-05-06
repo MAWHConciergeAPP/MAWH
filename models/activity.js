@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
     var Activity = sequelize.define("Activity", {
-        name: DataTypes.STRING,
+        activity_name: DataTypes.STRING,
         streetAddress: DataTypes.STRING,
         city: DataTypes.STRING,
         stateAbbr: DataTypes.STRING,
@@ -9,6 +9,8 @@ module.exports = function(sequelize, DataTypes) {
         durationInMinutes: DataTypes.INTEGER,
         url: DataTypes.STRING,
         island: DataTypes.STRING
+    }, {
+        timestamps: false
     });
 
     Activity.associate = function(models) {
@@ -19,4 +21,4 @@ module.exports = function(sequelize, DataTypes) {
     };
     
     return Activity;
-}
+};

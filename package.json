@@ -4,7 +4,8 @@
   "description": "A concierge app for wish families visiting Hawaii for their wish",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -19,9 +20,11 @@
   "homepage": "https://github.com/MAWHConciergeAPP/MAWH#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
+    "mocha": "^5.1.1",
     "mysql2": "^1.5.3",
     "sequelize": "^4.37.6"
   }

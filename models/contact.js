@@ -2,6 +2,8 @@ module.exports = function(sequelize, DataTypes) {
     var Contact = sequelize.define("Contact", {
         chapter: DataTypes. STRING,
         phone: DataTypes.STRING
+    }, {
+        timestamps: false
     });
 
     Contact.associate = function(models) {
@@ -9,4 +11,4 @@ module.exports = function(sequelize, DataTypes) {
     };
 
     return Contact;
-}
+};
