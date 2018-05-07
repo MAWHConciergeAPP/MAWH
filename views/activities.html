@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MAW</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link to bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Link to personalized css -->
+        <link rel="stylesheet" type="text/css" media="screen" href="../public/css/style.css" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+<body>
+    <!-- Begin Navbar container -->
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <div class="wish-pic"><img src="../public/img/wish-logo.png"></div>
+                  </div> <!-- Navbar Header -->
+              
+     <!-- Navbar Links -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Itinerary <span class="sr-only"></span></a></li>
+                      <li><a href="#">Activities</a></li>
+                      <li><a href="#">Grindz</a></li>
+                      <li><a href="#">Medical</a></li>
+                      <li><a href="#">FAQ's</a></li>
+                    </ul>
+                    </div> <!-- collapse navbar-collapse -->
+                    </div> <!-- container-fluid -->
+                 </nav> <!-- entire navbar --> 
+            
+    
+                <!-- start container -->
+                <div class="container">
+               
+                        <div class="row big-row">
+                                <div class="col-md-5">
+                                    <div class="row">
+                                        <div class="help-pic"><img src="../public/img/ActivityMessage.png"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="hula-pic"><img src="../public/img/hula-girl.png"></div>
+                                    </div>
+                                    </div> <!-- col-md-5-->
+                                    <div class="col-md-7">
+                                        <div class="row">
+                                            <div class="form-group activity-form">
+                                                    <label for="question1">Select your activity for more information.</label>
+                                                    <select required class="form-control" id="question1">
+                                                        <option value disabled selected>Select an activity</option>
+                                                        <option value="1" data-name="dolphin">Swimming with dolphins</option>
+                                                        <option value="2" data-name="snorkle">Snorkling</option>
+                                                        <option value="3" data-name="zoo">Zoo</option>
+                                                        <option value="4" data-name="aquarium">Aquarium</option>
+                                                        <option value="5" data-name="luau">Beach Luau</option>
+                                                    </select>
+                                                </div>
+                                              </div> <!--row-->
+                                              <div class="row">
+                                                    <div class="panel panel-default">
+                                                            <!-- Default panel contents -->
+                                                            <div class="panel-heading">More information for [Activity Name]</div>
+                                                            <div class="panel-body">
+                                                          
+                                                            <!-- Table -->
+                                                            <table>
+                                                                <tr>
+                                                                  <th>Activity</th>
+                                                                  <th>Location</th>
+                                                                  <th>Hours</th>
+                                                                  <th>Phone Number</th>
+                                                                </tr>
+                                                                        <tr data-row-id="activity-table-row-1">
+                                                                        <td data-name="activity">*</td>
+                                                                        <td data-name="location">*</td>
+                                                                        <td data-name="hours">*</td>
+                                                                        <td data-name="phone-number">*</td>
+                                                                         </tr>
+                                                                 </table>
+            
+                                                          </div> <!-- panel body --> 
+                                                    </div> <!-- panel default -->
+                                                  </div> <!-- col-lg-12 --> 
+                                                </div> <!--table row -->
+                                              </div>
+                                            </div> <!--col-md-7 -->
+                                    </div> <!-- big-row-->
+                                                       
+                                                                    
+                                            
+                                
+                                </div> <!-- container -->
+                    <br>
+                    <br>
+                    <br>
+                
+                
+                
+</body>
+</html>
