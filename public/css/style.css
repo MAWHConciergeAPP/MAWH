@@ -49,6 +49,9 @@ tr:nth-child(even) {
 
 div.gallery {
     border: 1px solid #ccc;
+    border-style: double;
+    background-color: white;
+
 }
 
 div.gallery:hover {
@@ -56,6 +59,7 @@ div.gallery:hover {
 }
 
 div.gallery img {
+    padding: 5px 5px 0px 5px;
     width: 100%;
     height: auto;
 }
@@ -65,9 +69,6 @@ div.desc {
     text-align: center;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 .responsive {
     padding: 0 6px;
@@ -94,3 +95,10 @@ div.desc {
     clear: both;
 }
 
+/*---------------------------------- activity form + table------------------------------------ */
+.activity-form {
+    margin-left: 120px; 
+    margin-right: 120px; 
+    margin-top: 220px;
+}
+/* ----------------------------------end of table---------------------------------------------- */
