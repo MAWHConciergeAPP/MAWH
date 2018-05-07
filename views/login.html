@@ -1,46 +1,96 @@
-<!-- Copy paste with slight modification from Sequelize Passport Example -->
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <title>Passport Authentication</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Passport Authentication</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link to bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Link to personalized css -->
+        <link rel="stylesheet" type="text/css" media="screen" href="../public/css/style.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
-
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      </div>
-    </div>
-  </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Login Form</h2>
-        <form class="login">
-          <div class="form-group">
-            <label for="exampleInputUserID1">UserID</label>
-            <input type="userID" class="form-control" id="userID-input" placeholder="userID">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="password-input" placeholder="Password">
-          </div>
-          <button type="submit" class="btn btn-default">Login</button>
-        </form>
-        <br />
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/login.js"></script>
-
+    <!-- Begin Navbar container -->
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <div class="wish-pic"><img src="../public/img/wish-logo.png"></div>
+                  </div> <!-- Navbar Header -->
+              
+     <!-- Navbar Links -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Itinerary <span class="sr-only"></span></a></li>
+                      <li><a href="#">Activities</a></li>
+                      <li><a href="#">Grindz</a></li>
+                      <li><a href="#">Medical</a></li>
+                      <li><a href="#">FAQ's</a></li>
+                    </ul>
+                    </div> <!-- collapse navbar-collapse -->
+                    </div> <!-- container-fluid -->
+                 </nav> <!-- entire navbar --> 
+            
+    
+                <!-- start header -->
+                <div class="container">
+                    <div class="row">
+                            <div class="jumbotron">
+                                    <div class="page-header">
+                                            <h1>Aloha! E Komo Mai </h1>
+                                          </div>
+                                  </div>
+                            </div>
+                <!-- start Hula girl  -->
+                        <div class="row">
+                            <div class="col-md-3">
+                        <!--  Aloha Message     
+                                    <div class="row">
+                                    <div class="help-pic"><img src="../public/img/Alohamessage.png"></div>
+                                </div> -->
+                                <div class="row">
+                                    <div class="hula-pic"><img src="../public/img/hula-girl.png"></div>
+                                </div>
+                            </div>
+                                <div class="container">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <h2>Login Form</h2>
+                                        <form class="login">
+                                          <div class="form-group">
+                                            <label for="exampleInputUserID1">UserID</label>
+                                            <input type="userID" class="form-control" id="userID-input" placeholder="userID">
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="password-input" placeholder="Password">
+                                          </div>
+                                          <button type="submit" class="btn btn-default">Login</button>
+                                        </form>
+                                        <br />
+                                      </div>
+                                    </div>
+                                  </div>
+                            
+                        </div> <!-- row -->
+                    </div> <!-- container -->
+            
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../public/js/login.js"></script>
+              
 </body>
-
 </html>
