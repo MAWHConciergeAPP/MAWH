@@ -1,6 +1,7 @@
 body {
     background-image: url("../img/bg-palm.png");
 }
+
 #bs-example-navbar-collapse-1 {
     float: right; 
     padding: 10px 0px 0px 10px;
@@ -12,18 +13,47 @@ body {
     opacity: 0.5;
     padding: 10px 0px 10px 10px;
 }
-.help-pic {
-    margin-top: 10px;
+
+.start-pic {
+    margin-top: 100px;
     margin-left: 160px;
 }
+
+.ono-pic {
+    margin-left: 120px;
+}
+
+.gallery:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+.gallery {
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.desc {
+    font-size: 17px;
+    font-family: fantasy;
+    color: green;
+}
+
 .jumbotron {
     opacity: 0.8; 
+    margin-top: 40px; 
     text-align: center; 
     color: green; 
     font-family: 'Oswald', sans-serif;
     padding: 10px; 
     background-color: transparent;
 }
+
 .list-group {
     margin-top: 140px;
     text-align: center;
@@ -32,19 +62,26 @@ body {
     font-size: 20px;
     opacity: 0.9; 
 }
+
 /*---------------------------itinerary------------------------------------------------------*/
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
+
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
+
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+.itinerary-table {
+    margin-top: 350px;
 }
 
 /*---------------------------grindz------------------------------------------------------*/
@@ -101,8 +138,27 @@ div.desc {
 .activity-form {
     margin-left: 120px; 
     margin-right: 120px; 
-    margin-top: 220px;
+    margin-top: 280px;
 }
+/* ----------------------------------end of table---------------------------------------------- */
+
+/* ----------------------------------grindz columns-------------------------------------------- */
+.middle-col, .right-col {
+    margin-top: 200px;
+} 
+
+.hula-col, .middle-col, .right-col {
+    padding: 30px;
+}
+/* ---------------------------------end of grindz columns-------------------------------------- */
+
+
+.navbar-container {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    right: 0px;  
+    z-index: 5;    
 /* ----------------------------------medical---------------------------------------------- */
 
 .panel.panel-primary {

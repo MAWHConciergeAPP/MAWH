@@ -15,6 +15,8 @@ require("./routes/activity-api-routes.js");
 require("./routes/category-api-routes.js");
 require("./routes/contact-api-routes.js");
 require("./routes/faq-api-routes.js");
+require("./routes/html-routes.js");
+require("./routes/login-api-routes.js");
 require("./routes/user-api-routes.js");
 
 app.use(express.static("public"));

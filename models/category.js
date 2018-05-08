@@ -6,9 +6,7 @@ module.exports = function(sequelize, DataTypes) {
     });
 
     Category.associate = function (models) {
-        Category.belongsTo(models.Activity, {
-            foreignKey: { notNull: true }
-        });
+        Category.hasMany(models.Activity, {as: "categoryID"});
     };
         
     return Category;
