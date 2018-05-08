@@ -22,9 +22,8 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false
         },
         island: DataTypes.STRING,
-        airlineTo: DataTypes.STRING,
+        airline: DataTypes.STRING,
         arrivalDateTime: DataTypes.DATE,
-        airlineFrom: DataTypes.STRING,
         departureDateTime: DataTypes.DATE,
         chapter: DataTypes.STRING,
         isAdmin: DataTypes.BOOLEAN
