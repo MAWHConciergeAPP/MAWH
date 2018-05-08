@@ -79,6 +79,10 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
+.itinerary-table {
+    margin-top: 350px;
+}
+
 /*---------------------------grindz------------------------------------------------------*/
 
 div.gallery {
