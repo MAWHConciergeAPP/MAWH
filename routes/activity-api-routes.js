@@ -8,5 +8,11 @@ module.exports = function(app) {
             res.json(dbActivity);
         });
     });
-
+    app.get("/api/activities/:keyword", function(req, res) {
+        db.Category.findAll({
+            where: {id: req.params.keyword},
+        }).then(function(dbCategory) {
+            res.json(dbCategory);
+        });
+    });
 }

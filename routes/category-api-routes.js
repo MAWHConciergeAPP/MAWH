@@ -17,4 +17,11 @@ module.exports = function(app) {
             res.json(dbCategory);
         });
     });
+    app.get("/api/categories/:keyword", function(req, res) {
+        db.Category.findAll({
+            where: {id: req.params.keyword},
+        }).then(function(dbCategory) {
+            res.json(dbCategory);
+        });
+    });
 }
