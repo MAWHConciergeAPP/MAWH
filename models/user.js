@@ -21,6 +21,11 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
         },
+        island: DataTypes.STRING,
+        airlineTo: DataTypes.STRING,
+        arrivalDateTime: DataTypes.DATE,
+        airlineFrom: DataTypes.STRING,
+        departureDateTime: DataTypes.DATE,
         chapter: DataTypes.STRING,
         isAdmin: DataTypes.BOOLEAN
     }, {
@@ -28,25 +33,19 @@ module.exports = function(sequelize, DataTypes) {
     });
 
     User.associate = function(models) {
-        User.belongsTo(models.Schedule, {
-            foreignKey: {
-                notNull: true
-            }
-        });
-
         User.belongsTo(models.Contact, {
             foreignKey: {notNull: true}
         });
     };
 
     // creates a function for the User model.  Uses bcrypt to translate the non-hashed password to the hashed version and compare to the stored hashed version.  
-    user.prototype.validPassword = function(password) {
+    User.prototype.validPassword = function(password) {
         return bcrypt.compareSync(password, this.password);
     };
 
     // hooks are events that can be sequenced in with sequelize.  In this case, we take the user submitted password and convert to a hashed password using bcrypt
     // the salt value is 10.  Some tutorials I've seen recommend using >=12
-    user.hook("beforeCreate",function(user){
+    User.hook("beforeCreate",function(user){
         user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
     });
 
