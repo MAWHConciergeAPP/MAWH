@@ -1,14 +1,11 @@
 module.exports = function(sequelize, DataTypes) {
     var Schedule = sequelize.define("Schedule", {
-        startTime: DataTypes.TIME
+        startTime: DataTypes.TIME,
+        userID: DataTypes.STRING,
+        activityID: DataTypes.STRING
     }, {
         timestamps: false
     });
-
-    Schedule.associate = function(models) {
-        Schedule.hasMany(models.User, {as: "userID"});
-        Schedule.hasMany(models.Activity, {as: "activityID"});
-    };
 
     return Schedule;
 };

@@ -134,4 +134,9 @@ div.desc {
     left: 0px;
     right: 0px;  
     z-index: 5;    
+/* ----------------------------------medical---------------------------------------------- */
+
+.panel.panel-primary {
+    margin-top: 50px;
+
 }
