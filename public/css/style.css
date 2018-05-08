@@ -6,6 +6,11 @@ body {
     padding: 10px 0px 0px 10px;
 
 }
+
+ .nav.navbar.navbar-default {
+    border-bottom-color: green;
+ }
+
 .wish-pic {
     opacity: 0.5;
     padding: 10px 0px 10px 10px;
