@@ -32,6 +32,16 @@ body {
     z-index:999;
 }
 
+.gallery {
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.desc {
+    font-size: 17px;
+    font-family: fantasy;
+    color: green;
+}
 
 .jumbotron {
     opacity: 0.8; 
