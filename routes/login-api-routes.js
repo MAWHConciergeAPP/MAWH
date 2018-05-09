@@ -19,22 +19,20 @@ module.exports = function(app) {
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // otherwise send back an error
    
-  // GBK Note: Following block is commented out.  For time being, I thought we'd add new users from the db admin side 
-  // in the future, or later if we have everything else working, we can add a web interface to add users.
-  
-//   app.post("/api/signup", function(req, res) {
-//     console.log(req.body);
-//     db.User.create({
-//       email: req.body.email,
-//       password: req.body.password
-//     }).then(function() {
-//       res.redirect(307, "/api/login");
-//     }).catch(function(err) {
-//       console.log(err);
-//       res.json(err);
-//       // res.status(422).json(err.errors[0].message);
-//     });
-//   });
+    
+  app.post("/api/signup", function(req, res) {
+    console.log(req.body);
+    db.User.create({
+      email: req.body.email,
+      password: req.body.password
+    }).then(function() {
+      res.redirect(307, "/api/login");
+    }).catch(function(err) {
+      console.log(err);
+      res.json(err);
+      // res.status(422).json(err.errors[0].message);
+    });
+  });
 
   // Route for logging user out
   app.get("/logout", function(req, res) {
