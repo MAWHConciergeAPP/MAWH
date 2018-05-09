@@ -11,13 +11,13 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 
-require("./routes/activity-api-routes.js");
-require("./routes/category-api-routes.js");
-require("./routes/contact-api-routes.js");
-require("./routes/faq-api-routes.js");
-require("./routes/html-routes.js");
-require("./routes/login-api-routes.js");
-require("./routes/user-api-routes.js");
+require("./routes/activity-api-routes.js")(app);
+require("./routes/category-api-routes.js")(app);
+require("./routes/contact-api-routes.js")(app);
+require("./routes/faq-api-routes.js")(app);
+require("./routes/html-routes.js")(app);
+require("./routes/login-api-routes.js")(app);
+require("./routes/user-api-routes.js")(app);
 
 app.use(express.static("public"));
 
