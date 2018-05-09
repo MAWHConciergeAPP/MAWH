@@ -9,5 +9,5 @@ $(document).ready(function(){
     var grindzContainer = $(".image-container");
 
     // click events for the table submit buttons// dropdown choices. 
-    $("select").change(function())
+   // $("select").change(function())
 })
