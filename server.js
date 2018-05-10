@@ -21,6 +21,7 @@ require("./routes/activity-api-routes.js")(app);
 require("./routes/category-api-routes.js")(app);
 require("./routes/contact-api-routes.js")(app);
 require("./routes/faq-api-routes.js")(app);
+require("./routes/food-api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 require("./routes/login-api-routes.js")(app);
 require("./routes/medical-api-routes.js")(app);
