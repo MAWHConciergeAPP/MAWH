@@ -20,6 +20,7 @@ module.exports = function(sequelize, DataTypes) {
         Activity.belongsTo(models.Category, {
             foreignKey: {notNull: true}
         });
+        Activity.hasMany(models.Schedule, {as: "activityID"});
     };
     
     return Activity;
