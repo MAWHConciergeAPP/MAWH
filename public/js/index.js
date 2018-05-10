@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     // click events for the table submit buttons// dropdown choices. 
     // activity table select query
-    $("#specific-form").change(function(){
+    $("#activity-table").change(function(){
         console.log($(this).val()); 
         $.get("/api/activities", function(dataResult){
             console.log(dataResult); 
