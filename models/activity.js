@@ -3,13 +3,10 @@ module.exports = function(sequelize, DataTypes) {
         activity_name: DataTypes.STRING,
         streetAddress: DataTypes.STRING,
         city: DataTypes.STRING,
-        stateAbbr: DataTypes.STRING,
-        zip: DataTypes.STRING,
+        island: DataTypes.STRING,
         phone: DataTypes.STRING,
         durationInMinutes: DataTypes.INTEGER,
-        img_url: DataTypes.STRING,
-        website_url: DataTypes.STRING,
-        island: DataTypes.STRING,
+        url: DataTypes.STRING,
         keyword: DataTypes.STRING,
         notes: DataTypes.STRING
     }, {
