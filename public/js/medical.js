@@ -1,6 +1,6 @@
 /*----------------------medical facilities table------------------------------------*/
 
-axios.get('/api/activities', {
+axios.get('/api/clinics', {
     params: {
     id: 2
     }
