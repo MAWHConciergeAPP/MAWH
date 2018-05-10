@@ -11,7 +11,7 @@ module.exports = function(app) {
     if (req.user) {
       res.redirect("/members");
     }
-    res.sendFile(path.join(__dirname, "../public/signup.html"));
+    res.sendFile(path.join(__dirname, "../views/signup.html"));
   });
 
 
@@ -21,7 +21,7 @@ module.exports = function(app) {
     if (req.user) {
       res.redirect("/index.html");
     }
-    res.sendFile(path.join(__dirname, "../public/login.html"));
+    res.sendFile(path.join(__dirname, "../views/login.html"));
   });
 
   // Here we've add our isAuthenticated middleware to this route.
