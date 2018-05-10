@@ -12,7 +12,7 @@ module.exports = function(app) {
     console.log(req.user);
     if (req.user) {
       console.log("user exists, going to index");
-      res.redirect("/index.html");
+      res.redirect("/welcome.html");
     }
     console.log("go sign up");
     res.sendFile(path.join(__dirname, "../views/signup.html"));
@@ -26,7 +26,7 @@ module.exports = function(app) {
     console.log(req.user);
     if (req.user) {
       console.log("has user");
-      res.redirect("./index.html");
+      res.redirect("./welcome.html");
       res.end();
     }
     console.log("no user");
