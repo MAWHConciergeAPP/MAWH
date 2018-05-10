@@ -1,3 +1,3 @@
 $(document).ready(function() {
-	$.get("/api/")
+	$.get("/api/activities/")
 })
