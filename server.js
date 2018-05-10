@@ -21,14 +21,16 @@ require("./routes/activity-api-routes.js")(app);
 require("./routes/category-api-routes.js")(app);
 require("./routes/contact-api-routes.js")(app);
 require("./routes/faq-api-routes.js")(app);
-// require("./routes/html-routes.js")(app);
+require("./routes/food-api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 require("./routes/login-api-routes.js")(app);
+require("./routes/medical-api-routes.js")(app);
 require("./routes/user-api-routes.js")(app);
 
 
 
 
-db.sequelize.sync({}).then(function() {
+db.sequelize.sync({force: true}).then(function() {
     app.listen(PORT, function() {
         console.log("App listening on PORT " + PORT);
     });
