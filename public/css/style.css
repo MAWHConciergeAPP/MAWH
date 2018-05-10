@@ -15,7 +15,7 @@ body {
 }
 
 .start-pic {
-    margin-top: 100px;
+    margin-top: 25px;
     margin-left: 160px;
 }
 
@@ -71,7 +71,11 @@ tr:nth-child(even) {
 }
 
 .itinerary-table {
-    margin-top: 350px;
+    margin-top: 200px;
+}
+
+#itn-pic {
+    margin-top: 0px;
 }
 
 /*---------------------------grindz------------------------------------------------------*/
@@ -132,7 +136,7 @@ div.desc {
 .activity-form {
     margin-left: 120px; 
     margin-right: 120px; 
-    margin-top: 280px;
+    margin-top: 75px;
 }
 /* ----------------------------------end of table---------------------------------------------- */
 
@@ -155,6 +159,16 @@ div.desc {
     z-index: 5;    
 }
 /* ----------------------------------medical---------------------------------------------- */
+
+#contact {
+    margin-top: 100px;
+}
+
+#UC-btn {
+    padding-left: 20px;
+}
+
+
 
 #mapImage {
     background-image: url("../img/map2.jpg");
