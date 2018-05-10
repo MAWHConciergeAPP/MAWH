@@ -3,14 +3,14 @@ $(document).ready(function(){
     // DOESN"T EXIST YET
     var grindzContainer = $(".image-container");
        // grindz table
-       $("#specific-form").change(function(){
+       $("#local-food").change(function(){
         var keyword = $(this).val();
         console.log(keyword);
         $.get("/api/activities/" + keyword, function(dataResult){
-            console.log(res.json);
-        })
-    })
-})
+            console.log("HEY");
+        });
+    });
+});
 
 function loadImages(){
 
