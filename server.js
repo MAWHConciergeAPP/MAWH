@@ -23,6 +23,7 @@ require("./routes/contact-api-routes.js")(app);
 require("./routes/faq-api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 require("./routes/login-api-routes.js")(app);
+require("./routes/medical-api-routes.js")(app);
 require("./routes/user-api-routes.js")(app);
 
 
