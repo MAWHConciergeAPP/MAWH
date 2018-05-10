@@ -7,10 +7,10 @@ $(document).ready(function(){
         var keyword = $(this).val();
         console.log(keyword);
         $.get("/api/activities/" + keyword, function(dataResult){
-            console.log(res.json);
-        })
-    })
-})
+            console.log("HEY");
+        });
+    });
+});
 
 function loadImages(){
 
