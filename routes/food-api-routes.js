@@ -3,7 +3,7 @@ var db = require("../models");
 module.exports = function(app) {
 
 	// all foods if logged in
-	ap.get("/api/grindz", function(req, res) {
+	app.get("/api/grindz", function(req, res) {
 		if (req.user) {
 			db.Grindz.findAll({}).then(function(dbGrindz) {
 				res.json(dbGrindz);
