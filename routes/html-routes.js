@@ -8,9 +8,13 @@ module.exports = function(app) {
 
   app.get("/", function(req, res) {
     // If the user already has an account send them to the members page
+    console.log("got a / request");
+    console.log(req.user);
     if (req.user) {
-      res.redirect("/members");
+      console.log("user exists, going to index");
+      res.redirect("/index.html");
     }
+    console.log("go sign up");
     res.sendFile(path.join(__dirname, "../views/signup.html"));
   });
 
@@ -18,10 +22,15 @@ module.exports = function(app) {
   // GBK Note: need to figure out landing page for logged in users and path to emergency contact page.
   app.get("/login", function(req, res) {
     // If the user already has an account send them to the members page
+    console.log("got a login request");
+    console.log(req.user);
     if (req.user) {
-      res.redirect("/index.html");
+      console.log("has user");
+      res.redirect("./index.html");
+      res.end();
     }
-    res.sendFile(path.join(__dirname, "../views/login.html"));
+    console.log("no user");
+    res.redirect("./medical.html");
   });
 
   // Here we've add our isAuthenticated middleware to this route.
