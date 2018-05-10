@@ -10,7 +10,7 @@ module.exports = function(app) {
     });
     app.get("/api/activities/:keyword", function(req, res) {
         db.Activity.findAll({
-            where: {id: req.params.keyword},
+            where: {keyword: req.params.keyword},
         }).then(function(dbActivity) {
             res.json(dbActivity);
         });

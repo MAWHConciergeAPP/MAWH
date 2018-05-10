@@ -1,21 +1,19 @@
-$(document).ready(function(){
 
-    // activityContainer holds the data to be appended once an activity is chosen
-    var activityContainer = $(".activity-table");
-   
-    
+$(document).ready(function() {
+	$("#question1").change(function() {
+		var keyword = $(this).val();
+		console.log(keyword);
 
-    // click events for the table submit buttons// dropdown choices. 
-    // activity table select query
-    $("#question-1").change(function(){
-        var activity = $(this).val();
-        console.log($(activity); 
-        
-        $.get("/api/activities" + keyword, function(result){
-            // var activityArr = []
-            console.log(result); 
-        });
-        
-    });
-    
+		$.get("/api/activities/" + keyword, function(data) {
+			console.log(data);
+			$("#tbody").children().remove();
+			for (var i = 0; i < data.length; i++) {
+				$("#tBody").append("<td>" + data[i].activity_name + "</td>");
+				$("#tBody").append("<td>" + data[i].streetAddress + ", " + data[i].city + "</td>");
+				$("#tBody").append("<td>" + data[i].phone + "</td>");
+				$("#tBody").append("<td>" + data[i].durationInMinutes + "</td>");
+			}
+
+		});
+	});
 });
