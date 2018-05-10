@@ -22,7 +22,7 @@ module.exports = function(app) {
                 res.json(dbUser);
             });
         } else {
-            console.log("not logged in user requested user with ID: " req.params.id);
+            console.log("not logged in user requested user with ID: " + req.params.id);
         };
     });
 }
