@@ -21,6 +21,6 @@ module.exports = function(app) {
             });
         } else {
             console.log("not logged in user requesting activities with keyword: " + req.params.keyword);
-        }
+        };
     });
 }
