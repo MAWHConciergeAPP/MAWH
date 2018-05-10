@@ -11,6 +11,7 @@ $(document).ready(function() {
 				$("#tBody").append("<td>" + data[i].streetAddress + ", " + data[i].city + "</td>");
 				$("#tBody").append("<td>" + data[i].phone + "</td>");
 				$("#tBody").append("<td>" + data[i].durationInMinutes + "</td>");
+				$("#tBody").append("<td><a href ='" + data[i].url + "'>Website</a></td>");
 			}
 
 		});
