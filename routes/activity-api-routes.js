@@ -9,10 +9,10 @@ module.exports = function(app) {
         });
     });
     app.get("/api/activities/:keyword", function(req, res) {
-        db.Category.findAll({
+        db.Activity.findAll({
             where: {id: req.params.keyword},
-        }).then(function(dbCategory) {
-            res.json(dbCategory);
+        }).then(function(dbActivity) {
+            res.json(dbActivity);
         });
     });
 }
