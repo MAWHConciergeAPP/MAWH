@@ -1,17 +1,14 @@
+$(document).ready(function() {
+  $("#question1").change(function() {
+    var id = $(this).val();
+    console.log(id);
 
-  $(document).ready(function() {
-    $("#question1").change(function() {
-      var keyword = $(this).val();
-      console.log(keyword);
-  
-      $.get("/api/faqs/:id" + keyword, function(data) {
-        console.log(data);
-        $("faqbody").children().remove();
-        data.forEach(function(result) {
-          var answer = $("<p>");
-          answer.append("<p>" + result.answer + "</p>");   
-          answer.appendTo("#faqbody");
-        });
-      });
+    $.get("/api/faqs/" + id, function(data) {
+      console.log(data);
+      $("#faqbody").children().remove();
+      var answer = $("<p>");
+      answer.append(data.answer);
+      answer.appendTo("#faqbody");
     });
   });
+});
