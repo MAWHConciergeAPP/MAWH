@@ -2,7 +2,7 @@ module.exports = function(sequelize, DataTypes) {
     var Schedule = sequelize.define("Schedule", {
         startTime: DataTypes.TIME,
         activityDate: DataTypes.DATEONLY,
-        userID: DataTypes.STRING
+        userLogin: DataTypes.STRING
     }, {
         timestamps: false
     });
@@ -11,7 +11,12 @@ module.exports = function(sequelize, DataTypes) {
     	Schedule.belongsTo(models.Activity, {
     		foreignKey: {notNull: true}
     	});
+
+        Schedule.belongsTo(models.User, {
+            foreignKey: {notNull: true}
+        });
     };
+
 
     return Schedule;
 };
