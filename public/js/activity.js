@@ -6,16 +6,16 @@ $(document).ready(function() {
 
 		$.get("/api/activities/" + keyword, function(data) {
 			console.log(data);
-			$("<tbody>").children().remove();
-			var tr = $("<tr>");
-			for (var i = 0; i < data.length; i++) {
-				tr.append("<td>" + data[i].activity_name + "</td>");
-				tr.append("<td>" + data[i].streetAddress + ", " + data[i].city + "</td>");
-				tr.append("<td>" + data[i].phone + "</td>");
-				tr.append("<td>" + data[i].durationInMinutes + " minutes</td>");
-				tr.append("<td><a href ='" + data[i].url + "'>Website</a></td>");
-				$("#tbody").append(tr);
-			}
+			$("#tbody").children().remove();
+			data.forEach(function(result) {
+				var tr = $("<tr>");
+				tr.append("<td>" + result.activity_name + "</td>");
+				tr.append("<td>" + result.streetAddress + ", " + result.city + "</td>");
+				tr.append("<td>" + result.phone + "</td>");
+				tr.append("<td>" + result.durationInMinutes/60 + " hours</td>");
+				tr.append("<td><a href ='" + result.url + "' target='_blank'>Website</a></td>");
+				tr.appendTo("#tbody");
+			});
 		});
 	});
 });
