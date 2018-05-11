@@ -50,68 +50,73 @@
   <!-- start header -->
   <div class="container">
     <div class="row">
-            <div class="jumbotron">
-                    <div class="page-header">
-                            <h1>Itinerary</h1>
-                          </div>
-                  </div>
-            </div>
-  
-  <!-- start container -->
-  <div class="container">
-   
-    <div class="row">
-      <div class="col-md-3">
-        <div class="row">
-          <div class="start-pic" id="itn-pic"><img src="./img/start-message.png"></div>
+      <div class="jumbotron">
+        <div class="page-header">
+          <h1>Itinerary</h1>
         </div>
-        <div class="row">
-          <div class="hula-pic"><img src="./img/hula-girl.png"></div>
-        </div>
-      </div>                                                                    
-      
-      
-      <div class="col-lg-8 col-md-offset-1 itinerary-table">
-        <div class="panel panel-default">
-          <!-- Default panel contents -->
-          <div class="panel-heading">The Itinerary for [Wish Child's Name]</div>
-          <div class="panel-body">
-            
-            <!-- Table -->
-            <table>
-              <tr>
-                <th>Airline</th>
-                <th>Flight Date</th>
-                <th>Flight Time</th>
-                <th>Activities</th>
-                <th>Activity Date</th>
-                <th>Activity Time</th>
-              </tr>
-              <tr data-row-id="itinerary-table">
-                <td data-name="flight-name">*</td>
-                <td data-name="flight-date">*</td>
-                <td data-name="flight-time">*</td>
-                <td data-name="activity">*</td>
-                <td data-name="activity-date">*</td>
-                <td data-name="activity-time">*</td>
-              </tr>
-            </table>
-          </div> <!-- panel body --> 
-        </div> <!-- panel default -->
-        
-
       </div>
-    </div>         
-  </div> <!--container -->
-  
-  
-  
-  
-  <br>
-  <br>
-  <br>
-  
-  
-  
-</body>
-</html>
+    </div>
+
+    <!-- start container -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="row">
+            <div class="start-pic" id="itn-pic"><img src="./img/start-message.png"></div>
+          </div>
+          <div class="row">
+            <div class="hula-pic"><img src="./img/hula-girl.png"></div>
+          </div>
+        </div>                                                                    
+
+
+        <div class="col-lg-8 col-md-offset-1 itinerary-table">
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">The Itinerary for 
+              <div id="child-name"></div>
+            </div>
+            <div class="panel-body">
+
+              <table>
+                <tr>
+                  <th>Airline</th>
+                  <th>Outbound Date</th>
+                  <th>Flight Time</th>
+                  <th>Return Date</th>
+                  <th>Flight Time</th>
+                </tr>
+                <tbody id="flight-info"></tbody>
+              </table>
+              <br><br>
+              <!-- Table -->
+              <table>
+                <tr>
+                  <th>Activity</th>
+                  <th>Location</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Notes</th>
+                </tr>
+                <tbody id="itinerary-display"></tbody>
+              </table>
+            </div> <!-- panel body --> 
+          </div> <!-- panel default -->
+
+
+        </div>
+      </div>         
+    </div> <!--container -->
+
+
+
+
+    <br>
+    <br>
+    <br>
+
+
+    <script src="./js/itinerary.js"></script> 
+  </body>
+  </html>
