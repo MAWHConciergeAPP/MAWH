@@ -166,6 +166,12 @@ div.desc {
 
 #UC-btn {
     padding-left: 20px;
+    background-color: rgb(165, 165, 165) ;
+    color: white;
+   margin-left: 150px;
+   border-color: blue;
+
+
 }
 
 
