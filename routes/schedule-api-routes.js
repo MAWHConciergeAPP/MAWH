@@ -5,8 +5,8 @@ module.exports = function(app) {
 		// console.log(req.User);
 		if (req.user) {
 			db.Schedule.findAll({
-				where: {userID: req.user.userID},
-				include: [db.Activity]
+				where: {userLogin: req.user.userID},
+				include: [db.Activity, db.User]
 			}).then(function(dbSchedule) {
 				res.json(dbSchedule);
 			});

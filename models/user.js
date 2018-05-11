@@ -35,6 +35,8 @@ module.exports = function(sequelize, DataTypes) {
         User.belongsTo(models.Contact, {
             foreignKey: {notNull: true}
         });
+
+        User.hasMany(models.Schedule);
     };
 
     // creates a function for the User model.  Uses bcrypt to translate the non-hashed password to the hashed version and compare to the stored hashed version.  
