@@ -186,3 +186,14 @@ div.desc {
   background-repeat: no-repeat;
 
 }
+
+
+#signup {
+    margin-left: 120px;
+}
+
+#medical {
+    margin-left: 121px;
+    background-color: blue;
+    color: white;
+}
