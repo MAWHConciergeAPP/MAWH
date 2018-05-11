@@ -3,30 +3,33 @@ $(document).ready(function(){
      
        // grindz form
  
-
+        $(".desc").val("");
         $("#local-food").change(function() {
             var keyword = $(this).val();
             console.log(keyword);
 
-            $.get("/api/grindz/" + keyword, function(data) {
+            $.get("/api/grindzs/" + keyword, function(data) {
                 console.log(data);
-                $(".gallery").append(data.img_url);
+                // $(".gallery-left").prepend("<img>" + data.img_url + "</img>");
                 // $(".gallery-right").append(data.img_url);
             
-                for (var i = 0; i < data.length; i++) {
-                    $(".desc").append("<p>" + data.name + "<br>" 
-                    + data.streetAddress + "<br>" 
-                    + data.city + "<br>" 
-                    + data.island + "<br>" 
-                    + data.phone + "<br>" 
-                    + data.hours + "<br>"
-                    + data.website_url + "<br>"
-                    + data.keyword + "<br>"
-                    + data.price + "<br>"
-                    + data.notes + "</p>");
+                data.forEach(function(result) {
+                    var desc = $(".desc");
+                    // desc.append("<img>" +  + "<br>" + "<img>");
+                    desc.append("<p>" + result.name + "<br>" + "</p>");
+                    desc.append("<p>" + result.streetAddress + "<br>" + "</p>");
+                    desc.append("<p>" + result.city + " , " + result.island + "<br>" + "</p>");
+                    desc.append("<p>" + result.phone + "<br>" + "</p>"); 
+                    desc.append("<p>" + result.hours + "<br>" + "</p>");
+                    desc.append("<p>" + result.website_url + "<br>" + "</p>");
+                    desc.append("<p>" + result.price + "<br>" + "</p>");
+                    desc.append("<p>" + "Notes: " + result.notes + "</p>");
                     
-                }
-    
+                });
+                
+                $("select").change(function()  {
+                    $(".desc").empty();
+                });
             });
         });
     });
