@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-	$("#question1").change(function() {
+	$("#search").change(function() {
 		var keyword = $(this).val();
 		console.log(keyword);
 
