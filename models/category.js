@@ -5,9 +5,9 @@ module.exports = function(sequelize, DataTypes) {
         timestamps: false
     });
 
-    Category.associate = function (models) {
-        Category.hasMany(models.Activity, {as: "categoryID"});
+    Category.associate = function(models) {
+    	Category.hasMany(models.Activity, {as: "categoryID"});
     };
-        
+    
     return Category;
 };

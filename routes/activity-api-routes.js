@@ -12,15 +12,16 @@ module.exports = function(app) {
             console.log("not logged in user requesting activities");
         }
     });
+
     app.get("/api/activities/:keyword", function(req, res) {
         if (req.user) {
-            db.Category.findAll({
-                where: {keyword: req.params.keyword},
-            }).then(function(dbCategory) {
-                res.json(dbCategory);
+            db.Activity.findAll({
+                where: {keyword: req.params.keyword}
+            }).then(function(dbActivity) {
+                res.json(dbActivity);
             });
         } else {
-            console.log("not logged in user requesting activities with keyword: " + req.params.keyword);
+            console.log("Valid user not logged in.");
         };
     });
-}
+};
