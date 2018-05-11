@@ -3,18 +3,15 @@ $(document).ready(function(){
      
        // grindz form
  
-        $(".desc").val("");
         $("#local-food").change(function() {
             var keyword = $(this).val();
             console.log(keyword);
 
             $.get("/api/grindzs/" + keyword, function(data) {
                 console.log(data);
-                // $(".gallery-left").prepend("<img>" + data.img_url + "</img>");
-                // $(".gallery-right").append(data.img_url);
             
                 data.forEach(function(result) {
-                    var desc = $(".desc");
+                    var desc = $(".gallery-left");
                     // desc.append("<img>" +  + "<br>" + "<img>");
                     desc.append("<p>" + result.name + "<br>" + "</p>");
                     desc.append("<p>" + result.streetAddress + "<br>" + "</p>");
@@ -24,6 +21,11 @@ $(document).ready(function(){
                     desc.append("<p>" + result.website_url + "<br>" + "</p>");
                     desc.append("<p>" + result.price + "<br>" + "</p>");
                     desc.append("<p>" + "Notes: " + result.notes + "</p>");
+
+                    if (keyword === [1]) {
+                        var desc = $(".gallery-left");
+
+                    }
                     
                 });
                 
