@@ -1,5 +1,3 @@
-<!-- copy paste from example -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,47 +5,76 @@
   <title>Passport Authentication</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"> 
+   <!-- jQuery-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   <!-- Link to personalized css -->
+   <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
 <body>
+  <!-- Begin Navbar container -->
   <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="wish-pic"><img src="./img/wish-logo.png"></div>
+        </div> <!-- Navbar Header -->
       </div>
-    </div>
   </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Sign Up Form</h2>
-        <form class="signup">
-          <div class="form-group">
-            <label >user_name</label>
-            <input type="text" class="form-control" id="user_name-input" placeholder="user_name">
-          </div><div class="form-group">
-            <label >userID</label>
-            <input type="text" class="form-control" id="userID-input" placeholder="userID">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="password-input" placeholder="Password">
-          </div>
-          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-            <span class="sr-only">Error:</span> <span class="msg"></span>
-          </div>
-          <button type="submit" class="btn btn-default">Sign Up</button>
-        </form>
-        <br />
-        <p>Or log in <a href="/login">here</a></p>
-      </div>
-    </div>
-  </div>
+        <div class="container">
+            <div class="row">
+              <div class="jumbotron">
+                <div class="page-header">
+                  <h1>Aloha! E Komo Mai </h1>
+                </div>
+              </div>
+            </div>
+        </div>    
+           
+        <div class="col-md-3 col-md-offset-1">
+            <div class="hula-pic-reg"><img src="./img/hula-girl.png"></div>
+        </div>
+           
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8">
+                  <h2>Registration Form</h2>
+                  <form class="login">
+                    <div class="form-group">
+                      <label for="exampleInputUserID1">John Smith </label>
+                      <input type="userID" class="form-control" id="user_name-input" placeholder="user name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUserID1">jsmith</label>
+                        <input type="userID" class="form-control" id="userID-input" placeholder="userID">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="password-input" placeholder="********">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+                  <br />
+                </div>
+              </div>
+            </div>
+        </div>  
+  </div> 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="../js/signup.js"></script>
 
 </body>
-
 </html>
