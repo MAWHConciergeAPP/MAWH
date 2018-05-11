@@ -18,7 +18,7 @@ module.exports = function(sequelize, DataTypes) {
             foreignKey: {notNull: true}
         });
 
-        Activity.hasMany(models.Schedule);
+        Activity.hasMany(models.Schedule, {as: "activityID"});
     };
     
     return Activity;
