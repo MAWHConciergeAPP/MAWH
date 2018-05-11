@@ -23,7 +23,7 @@ body {
     margin-left: 120px;
 }
 
-.gallery:hover {
+/*.gallery:hover {
     position:relative;
     top:-25px;
     left:-35px;
@@ -31,7 +31,7 @@ body {
     height:auto;
     display:block;
     z-index:999;
-}
+}*/
 
 
 .jumbotron {
@@ -82,9 +82,11 @@ tr:nth-child(even) {
 
 div.gallery {
     border: 3px solid #ccc;
+    background-color: #ffffff;
     border-style: double;
-    height: 350px;
-    margin-bottom: 30px;
+    width: 25%;
+    margin: 20px;
+    text-align: center;
 }
     
 
@@ -95,6 +97,7 @@ div.gallery:hover {
 div.gallery img {
     padding: 5px 5px 0px 5px;
     width: 100%;
+    margin: auto;
     height: auto;
 }
 
