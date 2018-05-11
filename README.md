@@ -1,4 +1,4 @@
-#Make-A-Wish Hawaii Concierge App
+# Make-A-Wish Hawaii Concierge App
 
 ## Concept
 This website and app are designed to serve the Wish children and their families traveling to Hawaii on their Wish trips to assist with logistical questions and provide more information to make their travel experience less stressful and time in Hawaii more enjoyable.  Make-A-Wish is a non-profit organization that grants the wishes of children with a life threatening medical condition to enrich their lives with hope, strength, and joy.
@@ -50,7 +50,7 @@ All packages came from node package manager, or [npm](https://www.npmjs.com).
 * [passport](https://www.npmjs.com/package/passport)
 * [passport-local](https://www.npmjs.com/package/passport-local)
 
-##Developers
+## Developers
 1. Grady Knight
 2. Kayla McFadden
 3. Ashley Moore
@@ -58,6 +58,5 @@ All packages came from node package manager, or [npm](https://www.npmjs.com).
 
 If you would like to add an idea or comment to this website, please contact us via email at asterrypm@gmail.com.
 
-
-##Acknowledgments
+## Acknowledgments
 Special thanks to the professors and teacher assistants at UNC Chapel Hill: Andre Asselin, Kevin Collins, Michael Dinh, Daniel Kim, David Palmquist, and Zach Rickards.
