@@ -11,15 +11,15 @@ module.exports = function(app) {
         };
     });
     
-    app.get("/api/faqs/:id", function(req,res) {
+    app.get("/api/faqs/:keyword", function(req,res) {
         if (req.user) {
             db.FAQ.findOne({
-                where: {id: req.params.id}
+                where: {keyword: req.params.keyword}
             }).then(function(dbFAQ) {
                 res.json(dbFAQ);
             });
         } else {
-            console.log("not logged in user requested FAQ id:" + req.params.id);
+            console.log("Valid user not logged in.");
         };
     });
 };

@@ -1,10 +1,10 @@
 $(document).ready(function() {
   $("#question1").change(function() {
-    var id = $(this).val();
-    console.log(id);
+    var keyword = $(this).val();
+    console.log(keyword);
 
-    $.get("/api/faqs/" + id, function(data) {
-      console.log(data);
+    $.get("/api/faqs/" + keyword, function(data) {
+      console.log(data.answer);
       $("#faqbody").children().remove();
       var answer = $("<p>");
       answer.append(data.answer);
