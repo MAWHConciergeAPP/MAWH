@@ -1,17 +1,36 @@
 $(document).ready(function(){
-    // grindz container will place the pictures of the restaraunt once a "food category" is chosen
-    // DOESN"T EXIST YET
-    var grindzContainer = $(".image-container");
-       // grindz table
-       $("#local-food").change(function(){
-        var keyword = $(this).val();
-        console.log(keyword);
-        $.get("/api/activities/" + keyword, function(dataResult){
-            console.log("HEY");
+     
+       // grindz form
+ 
+        $("#local-food").change(function() {
+            var keyword = $(this).val();
+            console.log(keyword);
+
+            $("#gallery-left").preappend("<img id='onos' src='../public/img/onos.jpg'>");
+            $("#gallery-right").preappend("<img id='onos' src='../public/img/onos.jpg'>");
+    
+            $.get("/api/grindz/" + keyword, function(data) {
+                console.log(data);
+                for (var i = 0; i < data.length; i++) {
+                    $("#desc").append("<p>" +  + "</p>");
+                    $("#desc").append("<p>" +  + "</p>");
+                    $("#desc").append("<p>" +  + "</p>");
+                }
+    
+            });
         });
     });
-});
 
-function loadImages(){
 
-}
+
+
+
+
+
+
+
+        // $("#local-food").change(function(){
+        //     var keyword = $(this).val();
+        //     console.log(keyword);
+        //     $.get("/api/activities/" + keyword, function(dataResult){
+        //         console.log("dataResult");
