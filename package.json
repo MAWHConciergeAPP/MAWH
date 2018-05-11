@@ -1,5 +1,5 @@
 {
-  "name": "MAWH",
+  "name": "mawh",
   "version": "1.0.0",
   "description": "A concierge app for wish families visiting Hawaii for their wish",
   "main": "index.js",
@@ -32,5 +32,9 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sequelize": "^4.37.6"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {}
 }
