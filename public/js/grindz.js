@@ -9,6 +9,7 @@ $(document).ready(function() {
             $("#grindz-gallery").children().remove();
             data.forEach(function(result) {
                 var gallery = $("<div>");
+                gallery.addClass("col-sm-3");
                 gallery.addClass("gallery");
                 var desc = $("<div>");
                 desc.addClass("desc");
