@@ -71,7 +71,6 @@ tr:nth-child(even) {
 /*---------------------------grindz------------------------------------------------------*/
 .grindz-container {
     width: 100%;
-    margin-top: -10px;
     margin-top: 20px;
     display: flex;
 }
@@ -196,11 +195,6 @@ div.desc {
     margin-left: 225px;
 }
 
-/*#hula-pic-map {
-    margin-top: 300px;
-    margin-left: 25px;
-
-}*/
 
 #hula-pic-map {
     margin-top: 200px;
