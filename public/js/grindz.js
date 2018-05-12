@@ -9,7 +9,6 @@ $(document).ready(function() {
             $("#grindz-gallery").children().remove();
             data.forEach(function(result) {
                 var gallery = $("<div>");
-                gallery.addClass("col-sm-3");
                 gallery.addClass("gallery");
                 var desc = $("<div>");
                 desc.addClass("desc");
@@ -18,7 +17,7 @@ $(document).ready(function() {
                 desc.append(result.streetAddress + "<br>");
                 desc.append(result.phone + "<br>");
                 desc.append(result.price + "<br>");
-                desc.append("<a href = '" + result.website_url + "' target = '_blank'>View Website</a>");
+                desc.append("<a href = '" + result.website_url + "' target = '_blank'>ViewWebsite</a>");
                 desc.appendTo(gallery);
                 gallery.appendTo("#grindz-gallery");
             });
