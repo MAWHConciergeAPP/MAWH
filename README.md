@@ -33,7 +33,6 @@ Upon completeion of testing, the site was implemented via GitHub Pages: https://
 All packages came from node package manager, or [npm](https://www.npmjs.com).
 
 ### Front & Back End
-* [axios](https://www.npmjs.com/package/axios)
 * [body-parser](https://www.npmjs.com/package/body-parser)
 * [mysql2](https://www.npmjs.com/package/mysql2)
 * [sequelize](https://www.npmjs.com/package/sequelize)
@@ -42,6 +41,7 @@ All packages came from node package manager, or [npm](https://www.npmjs.com).
 ### Testing
 * [chai](https://www.npmjs.com/package/chai)
 * [mocha](https://www.npmjs.com/package/mocha)
+* [nightmare](https://www.npmjs.com/package/nightmare)
 
 ### User Authentication
 * [bcrypt-nodejs](https://www.npmjs.com/package/bcrypt-nodejs)
